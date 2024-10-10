@@ -57,7 +57,7 @@ export default async function claimFaucet() {
 
   logger.log("--------- Claiming faucet -----------");
 
-  fetch("https://bartio-faucet.berachain-devnet.com/api/claim", {
+  await fetch("https://bartio-faucet.berachain-devnet.com/api/claim", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
